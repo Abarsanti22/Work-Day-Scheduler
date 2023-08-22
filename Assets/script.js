@@ -2,27 +2,35 @@ $(document).ready(function() {
 
 });
 
-  let NowMoment= moment ().format ("MMMM Do YYYY");
+$("#currentDay").text(moment().format('dddd, MMMM Do YYYY'));
   let displayDate= document.getElementById("currentDay");
-  displayDate.innerHTML = NowMoment;
-  let currentHour = moment ().format ("HH");
+  // var now=moment ();
+  displayDate.innerHTML = now;
 
-  $(".time-div").each(function () {
-    var timeDiv= $(this).attr("id").split("-")[1];
-   
-    if (currentHour == timeDiv) {
+  // $("#now").text(moment().format("HH"));
+  // let currentHour = moment().format("HH");
+
+
+  // $(".time-div").each(function() {
+//   //   var timeDiv = $(this).attr("id").split("-")[1];
+// });
+
+    if (now == currentDay) {
       $(this).addClass ("present");
       $(this).children (".description").addClass("present");
 
-    } else if (currentHour < timeDiv) {
+    } else if (now < currentDay) {
       $(this).removeClass ("present");
       $(this).addClass ("future");
 
-    } else if (currentHour > timeDiv) {
+    } else if (now > currentDay) {
       $(this).removeClass ("future");
       $(this).addClass ("past");
     }
-  });
+
+
+  
+
 
   $(".saveBtn").click(function (event) {
     event.preventDefault ();
@@ -45,4 +53,5 @@ $("clearFieldsBtn").click(function(event) {
   event.preventDefault;
   $("textArea").val("");
   localStorage.clear();
+  
 });
