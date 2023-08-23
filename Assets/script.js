@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+
+
+
 let Now = moment().format("dddd, MMMM, Do YYYY");
 let displayDate = document.getElementById("currentDay");
 displayDate.innerHTML = Now;
@@ -35,7 +38,7 @@ $(".time-div").each(function () {
     }
 
   });
-  
+
   $("#hour-09 .time-block").val (localStorage.getItem("09"));
   $("#hour-10 .time-block").val (localStorage.getItem("10"));
   $("#hour-11 .time-block").val (localStorage.getItem("11"));
