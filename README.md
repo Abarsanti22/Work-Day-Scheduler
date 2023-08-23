@@ -27,7 +27,8 @@ WHEN I refresh the page
 THEN the saved events persist
 
 ## Screenshot
-/Users/barsanti/Workday/Work-Day-Scheduler/Work-Day-Scheduler-1/4F61289C-A51D-47A4-9BE1-DFC1874FF300_1_201_a.jpeg
+![Screenshot 2023-08-23 at 3 32 07 PM](https://github.com/Abarsanti22/Work-Day-Scheduler/assets/138410240/1a76e7a8-3f11-4a5f-ac77-ad34e87d60db)
+
 
 ## Deployed Page
 https://abarsanti22.github.io/Work-Day-Scheduler/
